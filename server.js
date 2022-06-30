@@ -20,7 +20,7 @@ const Pet = require("./database/schemas/Pet");
 const Visita = require("./database/schemas/Visita");
 const PasswordToken = require("./database/schemas/PasswordToken");
 const { db } = require("./database/connection");
-db.sync({ force: true });
+// db.sync({ force: true });
 
 const routes = require("./routes/routes");
 
