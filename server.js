@@ -24,6 +24,10 @@ const { db } = require("./database/connection");
 
 const routes = require("./routes/routes");
 
+app.get("/", (req, res) => {
+  res.send("SistPet");
+});
+
 app.use("/", routes);
 
 app.listen(port, (err) => {
